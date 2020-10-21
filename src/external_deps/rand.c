@@ -16,7 +16,7 @@
 #include "rand.h"
 
 /* Unix and compatible case (including macOS) */
-#if defined(WITH_STDLIB) && (defined(__unix__) || defined(__APPLE__))
+#if defined(WITH_STDLIB) && (defined(__unix__) || defined(__APPLE__) || defined(__NuttX__))
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
